@@ -30,9 +30,9 @@ function App() {
               {/* Logo/Name */}
               <div className="flex items-center space-x-2" style={{ paddingLeft: '8rem' }}>
                 <button onClick={goHome} className="flex items-center space-x-2">
-                  <span className="text-xl font-semibold text-black">Rafa</span>
+                  <span className="text-xl font-semibold text-black">Anita</span>
                   <span className="text-2xl" style={{ color: 'rgb(128, 207, 163)' }}>✦</span>
-                  <span className="text-xl font-semibold text-black">Rodrigues</span>
+                  <span className="text-xl font-semibold text-black">Ekhoragbon</span>
                 </button>
               </div>
               {/* Navigation */}
