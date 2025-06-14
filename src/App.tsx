@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ArrowUpRight, ArrowRight, Linkedin } from 'lucide-react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import About from './About';
+import Header from './components/Header';
 
-function App() {
+function HomePage() {
   const [currentPage, setCurrentPage] = useState('home');
 
   const scrollToSection = (sectionId: string) => {
@@ -44,7 +47,7 @@ function App() {
                   Home
                 </button>
                 <button
-                  onClick={() => scrollToSection('about')}
+                  onClick={() => window.location.href = '/about'}
                   className="text-base font-medium text-black hover:text-green-500 transition-colors"
                 >
                   About
@@ -111,50 +114,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Fixed Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 font-sans">
-        <div className="w-full px-0 py-4">
-          <div className="flex items-center justify-between w-full">
-            {/* Logo/Name */}
-            <div className="flex items-center space-x-2" style={{ paddingLeft: '8rem' }}>
-              <button onClick={goHome} className="flex items-center space-x-2">
-                <span className="text-xl font-semibold text-black">Anita</span>
-                <span className="text-2xl" style={{ color: 'rgb(128, 207, 163)' }}>✦</span>
-                <span className="text-xl font-semibold text-black">Ekhoragbon</span>
-              </button>
-            </div>
-            {/* Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection('home')}
-                className="text-base font-medium text-black hover:text-green-500 transition-colors"
-              >
-                Home
-              </button>
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-base font-medium text-black hover:text-green-500 transition-colors"
-              >
-                About
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-base font-medium text-black hover:text-green-500 transition-colors"
-              >
-                Contact
-              </button>
-            </div>
-            {/* LinkedIn Button */}
-            <div>
-              <button className="bg-black text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors flex items-center space-x-2">
-                <Linkedin size={16} />
-                <span>LinkedIn</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <Header goHome={goHome} />
       {/* Hero Section */}
       <section id="home" className="w-full min-h-screen flex items-center bg-white font-sans">
         <div className="w-[1428px] h-[326px] flex flex-col items-start ml-32">
@@ -296,6 +256,8 @@ function App() {
         </div>
       </section>
 
+
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -341,6 +303,15 @@ function App() {
         </div>
       </section>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<><Header /><About /></>} />
+    </Routes>
   );
 }
 
