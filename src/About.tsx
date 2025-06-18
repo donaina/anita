@@ -95,23 +95,23 @@ const About: React.FC = () => (
               {/* Experience Item 2 */}
               <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-medium text-black mb-1">Senior Graphic Designer</h3>
-                  <div className="text-lg text-gray-400 mb-2">Rappi - São Paulo, Brazil</div>
-                  <div className="text-lg text-black">As part of Rappi's Growth team, I focused on user acquisition, managing app communications such as banners, in-app interactions and new icons and services. I also contributed to social media, OOH and paid media campaigns.</div>
+                  <h3 className="text-3xl font-medium text-black mb-1">Product Designer</h3>
+                  <div className="text-lg text-gray-400 mb-2">Global Accelerex Ltd. - Lagos, Nigeria (Hybrid)</div>
+                  <div className="text-lg text-black">Assisted in designing and iterating user interfaces for web and mobile apps, contributed to cross-functional collaboration for efficient product development, participated in brainstorming and design critiques, and strengthened skills in user-centered design, prototyping, and UX research using tools like Figma.</div>
                 </div>
                 <div className="ml-8 flex-shrink-0">
-                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Jul 2019 - May 2022</span>
+                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Apr 2022 - Mar 2023</span>
                 </div>
               </div>
               {/* Experience Item 3 */}
               <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-12">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-medium text-black mb-1">Art Director | Graphic Designer</h3>
-                  <div className="text-lg text-gray-400 mb-2">InVitro Agency - São Paulo, Brazil</div>
-                  <div className="text-lg text-black">Developed and executed employee campaigns in collaboration with HR to boost engagement. Also, creating key visuals (KVs) and adapting them across multiple channels for maximum impact.</div>
+                  <h3 className="text-3xl font-medium text-black mb-1">UI/UX Design Intern</h3>
+                  <div className="text-lg text-gray-400 mb-2">Cousant - Lagos, Nigeria (Remote)</div>
+                  <div className="text-lg text-black">Collaborated with designers and developers to gather user requirements, maintain brand consistency, balance functional and aesthetic design, develop UI screens and prototypes for Yalo and Cousant Academy, and troubleshoot UX issues.</div>
                 </div>
                 <div className="ml-8 flex-shrink-0">
-                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Mar 2017 - Jul 2019</span>
+                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Jan 2022 - May 2022</span>
                 </div>
               </div>
             </div>
