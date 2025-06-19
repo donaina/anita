@@ -84,12 +84,12 @@ const About: React.FC = () => (
               {/* Experience Item 1 */}
               <div className="flex flex-row justify-between items-start">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-medium text-black mb-1">Senior Brand Designer</h3>
-                  <div className="text-lg text-gray-400 mb-2">Conta Simples - Remote, Brazil</div>
-                  <div className="text-lg text-black">As a Senior Designer, I led brand and product campaigns, collaborated with Product Design to optimize platform performance using Figma, developed the company website on WebFlow and drove marketing campaigns to boost awareness and acquisition.</div>
+                  <h3 className="text-3xl font-medium text-black mb-1">Product Designer</h3>
+                  <div className="text-lg text-gray-400 mb-2">Dataware Tech - Accra, Ghana (Remote)</div>
+                  <div className="text-lg text-black">Led the redesign of the company’s website and collaborated with cross-functional teams to define user requirements, communicate design goals, and deliver user-focused features—resulting in improved usability, increased engagement, and enhanced user satisfaction.</div>
                 </div>
                 <div className="ml-8 flex-shrink-0">
-                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">May 2022 - Aug 2024</span>
+                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Mar 2023 - Oct 2024</span>
                 </div>
               </div>
               {/* Experience Item 2 */}
