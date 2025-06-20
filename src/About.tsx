@@ -81,18 +81,29 @@ const About: React.FC = () => (
               <div className="w-12 h-1 bg-black mt-2 mb-4" />
             </div>
             <div className="flex flex-col gap-y-16">
-              {/* Experience Item 1 */}
+              {/* Experience Item 1 - NEW */}
               <div className="flex flex-row justify-between items-start">
+                <div className="flex-1">
+                  <h3 className="text-3xl font-medium text-black mb-1">UX Designer</h3>
+                  <div className="text-lg text-gray-400 mb-2">EnsuredNG - Lagos,Nigeria (Remote)</div>
+                  <div className="text-lg text-black"> </div>
+                </div>
+                <div className="ml-8 flex-shrink-0">
+                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Nov 2024 - Present</span>
+                </div>
+              </div>
+              {/* Experience Item 2 */}
+              <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-12">
                 <div className="flex-1">
                   <h3 className="text-3xl font-medium text-black mb-1">Product Designer</h3>
                   <div className="text-lg text-gray-400 mb-2">Dataware Tech - Accra, Ghana (Remote)</div>
-                  <div className="text-lg text-black">Led the redesign of the company’s website and collaborated with cross-functional teams to define user requirements, communicate design goals, and deliver user-focused features—resulting in improved usability, increased engagement, and enhanced user satisfaction.</div>
+                  <div className="text-lg text-black">Led the redesign of the company's website and collaborated with cross-functional teams to define user requirements, communicate design goals, and deliver user-focused features—resulting in improved usability, increased engagement, and enhanced user satisfaction.</div>
                 </div>
                 <div className="ml-8 flex-shrink-0">
                   <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Mar 2023 - Oct 2024</span>
                 </div>
               </div>
-              {/* Experience Item 2 */}
+              {/* Experience Item 3 */}
               <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-12">
                 <div className="flex-1">
                   <h3 className="text-3xl font-medium text-black mb-1">Product Designer</h3>
@@ -103,7 +114,7 @@ const About: React.FC = () => (
                   <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Apr 2022 - Mar 2023</span>
                 </div>
               </div>
-              {/* Experience Item 3 */}
+              {/* Experience Item 4 */}
               <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-12">
                 <div className="flex-1">
                   <h3 className="text-3xl font-medium text-black mb-1">UI/UX Design Intern</h3>
