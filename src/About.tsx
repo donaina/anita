@@ -72,10 +72,10 @@ const About: React.FC = () => (
     </section>
     {/* Experience & Education Section */}
     <section className="w-full bg-white py-0 mt-8">
-      <div className="max-w-[1680px] h-[1201px] mx-auto flex items-center justify-center">
-        <div className="max-w-[1480px] h-[1001px] w-full mx-auto flex flex-col gap-y-24">
+      <div className="max-w-[1680px] mx-auto flex items-center justify-center">
+        <div className="max-w-[1480px] w-full mx-auto flex flex-col gap-y-24">
           {/* Work Experience */}
-          <div className="h-[711px] flex flex-col">
+          <div className="flex flex-col">
             <div className="mb-8">
               <h2 className="text-4xl md:text-5xl font-semibold text-black">Work Experience</h2>
               <div className="w-12 h-1 bg-black mt-2 mb-4" />
@@ -128,7 +128,7 @@ const About: React.FC = () => (
             </div>
           </div>
           {/* Education */}
-          <div className="h-[250px] flex flex-col mt-8">
+          <div className="flex flex-col mt-8">
             <div className="mb-8">
               <h2 className="text-4xl md:text-5xl font-semibold text-black">Education</h2>
               <div className="w-12 h-1 bg-black mt-2 mb-4" />
