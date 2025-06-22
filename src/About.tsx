@@ -147,11 +147,11 @@ const About: React.FC = () => (
               {/* Education Item 2 */}
               <div className="flex flex-row justify-between items-start border-t border-gray-200 pt-8">
                 <div className="flex-1">
-                  <h3 className="text-3xl font-medium text-black mb-1">Bachelor's Degree in Graphic Design</h3>
-                  <div className="text-lg text-gray-400 mb-2">Escola Superior de Propaganda e Marketing (ESPM) - São Paulo, Brazil</div>
+                  <h3 className="text-3xl font-medium text-black mb-1">Bachelor's Degree in Sociology and Anthropology</h3>
+                  <div className="text-lg text-gray-400 mb-2">University Of Benin - Benin, Nigeria</div>
                 </div>
                 <div className="ml-8 flex-shrink-0">
-                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Jan 2012 - Dec 2016</span>
+                  <span className="inline-block px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-base font-medium shadow-sm">Oct 2016 - Jul 2021 </span>
                 </div>
               </div>
             </div>
