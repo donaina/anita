@@ -78,75 +78,106 @@ function HomePage() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-[1440px] mx-auto px-6">
-          <div className="grid grid-cols-2 gap-x-8 gap-y-8 justify-center">
-            {/* AR.ange Project */}
-            <div className="w-[694px] h-[500px] bg-gray-100 rounded-3xl overflow-hidden mb-6 relative p-8 flex flex-col items-center justify-center">
-              <img
-                src="https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="AR.ange VR Experience"
-                className="w-full h-80 object-cover rounded-2xl mb-4"
-              />
-              <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium absolute top-8 left-8">
-                Product Design
-              </div>
-              <span className="text-gray-500 text-sm mb-2">Study Case • AR.ange</span>
-              <h3 className="text-2xl font-semibold text-black group-hover:text-gray-600 transition-colors text-center">
-                The Art of Placement: Smarter Walls with AR.ange
-              </h3>
-            </div>
-            {/* Shoppers Drug Mart Project */}
-            <div className="w-[694px] h-[500px] bg-red-500 rounded-3xl overflow-hidden mb-6 relative p-8 flex flex-col items-center justify-center">
-              <div className="bg-white rounded-2xl p-4 shadow-2xl transform rotate-12 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+
+            {/* Project 1: BookBuddi */}
+            <div>
+              <a href="https://www.behance.net/gallery/176190791/BookBuddi-Case-Study" target="_blank" rel="noopener noreferrer" className="block h-[440px] rounded-3xl relative group overflow-hidden bg-gray-100">
                 <img
-                  src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Mobile App Interface"
-                  className="w-64 h-auto rounded-xl"
+                  src="/previews/BookBuddi.jpg"
+                  alt="BookBuddi project preview"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute top-8 left-8 bg-white/50 backdrop-blur-sm text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                  Product Design
+                </div>
+                <div className="absolute bottom-8 left-8 w-14 h-14 bg-white/50 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform">
+                  <ArrowUpRight size={28} className="text-black" />
+                </div>
+              </a>
+              <div className="text-left mt-4">
+                <span className="text-gray-500 text-sm mb-1 block">Study Case • BookBuddi</span>
+                <h3 className="text-2xl font-semibold text-black">
+                  BookBuddi: A new way to discover books
+                </h3>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium absolute top-8 left-8">
-                Product Design
-              </div>
-              <span className="text-gray-500 text-sm mb-2">Study Case • Shoppers Drug Mart</span>
-              <h3 className="text-2xl font-semibold text-black group-hover:text-gray-600 transition-colors text-center">
-                Creating a Voice User Interface Experience
-              </h3>
             </div>
-            {/* Anthropologie Project */}
-            <div className="w-[694px] h-[500px] bg-teal-600 rounded-3xl overflow-hidden mb-6 relative p-8 flex flex-col items-center justify-center">
-              <div className="bg-white rounded-lg shadow-2xl transform -rotate-3 mb-4">
+
+            {/* Project 2: Law Firm Website */}
+            <div>
+              <a href="https://www.behance.net/gallery/171655211/Law-Firm-Website" target="_blank" rel="noopener noreferrer" className="block h-[440px] rounded-3xl relative group overflow-hidden bg-[#C74141]">
                 <img
-                  src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Anthropologie Website"
-                  className="w-80 h-auto rounded-lg"
+                  src="/previews/LawFirm.jpg"
+                  alt="Law Firm Website preview"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute top-8 left-8 bg-white/30 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+                  Web Design
+                </div>
+                <div className="absolute bottom-8 left-8 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform">
+                  <ArrowUpRight size={28} className="text-white" />
+                </div>
+              </a>
+              <div className="text-left mt-4">
+                <span className="text-gray-500 text-sm mb-1 block">Study Case • Law Firm Website</span>
+                <h3 className="text-2xl font-semibold text-black">
+                  Modernizing a Law Firm's Online Presence
+                </h3>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium absolute top-8 left-8">
-                UX Research
-              </div>
-              <span className="text-gray-500 text-sm mb-2">Study Case • Anthropologie</span>
-              <h3 className="text-2xl font-semibold text-black group-hover:text-gray-600 transition-colors text-center">
-                Purchase Experience of Anthropologie
-              </h3>
             </div>
-            {/* Mirvish Project */}
-            <div className="w-[694px] h-[500px] bg-gradient-to-br from-red-500 to-yellow-400 rounded-3xl overflow-hidden mb-6 relative p-8 flex flex-col items-center justify-center">
-              <div className="bg-gray-800 rounded-lg shadow-2xl transform rotate-6 p-2 mb-4">
+
+            {/* Project 3: Opspad */}
+            <div>
+              <a href="https://www.behance.net/gallery/170294819/Opspad-Server-Management-Platform-UXUI-Case-Study" target="_blank" rel="noopener noreferrer" className="block h-[440px] rounded-3xl relative group overflow-hidden bg-teal-600">
                 <img
-                  src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Lion King Website"
-                  className="w-80 h-auto rounded"
+                  src="/previews/opspad.png"
+                  alt="Opspad project preview"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+                  UX/UI Case Study
+                </div>
+                <div className="absolute bottom-8 left-8 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform">
+                  <ArrowUpRight size={28} className="text-white" />
+                </div>
+              </a>
+              <div className="text-left mt-4">
+                <span className="text-gray-500 text-sm mb-1 block">Study Case • Opspad</span>
+                <h3 className="text-2xl font-semibold text-black">
+                  Opspad: Server Management Platform
+                </h3>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium absolute top-8 left-8">
-                UX/UI Design
-              </div>
-              <span className="text-gray-500 text-sm mb-2">Study Case • Mirvish</span>
-              <h3 className="text-2xl font-semibold text-black group-hover:text-gray-600 transition-colors text-center">
-                Mirvish's Website Information Architecture
-              </h3>
             </div>
+
+            {/* Project 4: Interior Landing Page */}
+            <div>
+              <a href="https://www.behance.net/gallery/134366115/ReDesigned-Interior-Landing-Page" target="_blank" rel="noopener noreferrer" className="block h-[440px] rounded-3xl relative group overflow-hidden bg-yellow-500">
+                <img
+                  src="/previews/ReDesigned.jpg"
+                  alt="Interior Landing Page preview"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute top-8 left-8 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium">
+                  Landing Page Design
+                </div>
+                <div className="absolute bottom-8 left-8 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform">
+                  <ArrowUpRight size={28} className="text-white" />
+                </div>
+              </a>
+              <div className="text-left mt-4">
+                <span className="text-gray-500 text-sm mb-1 block">Study Case • Interior Design</span>
+                <h3 className="text-2xl font-semibold text-black">
+                  ReDesigned Interior Landing Page
+                </h3>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
