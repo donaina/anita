@@ -1,120 +1,15 @@
-import React, { useState } from 'react';
-import { ArrowUpRight, ArrowRight, Linkedin } from 'lucide-react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ArrowUpRight, Linkedin } from 'lucide-react';
 import About from './About';
+import Contact from './Contact';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function HomePage() {
-  const [currentPage, setCurrentPage] = useState('home');
-
-  const scrollToSection = (sectionId: string) => {
-    if (sectionId === 'contact') {
-      setCurrentPage('contact');
-    } else {
-      setCurrentPage('home');
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        element?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  };
-
-  const goHome = () => {
-    setCurrentPage('home');
-  };
-
-  if (currentPage === 'contact') {
-    return (
-      <div className="min-h-screen bg-white">
-        {/* Fixed Navigation */}
-        <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 font-sans">
-          <div className="w-full px-0 py-4">
-            <div className="flex items-center justify-between w-full">
-              {/* Logo/Name */}
-              <div className="flex items-center space-x-2" style={{ paddingLeft: '8rem' }}>
-                <button onClick={goHome} className="flex items-center space-x-2">
-                  <span className="text-xl font-semibold text-black">Anita</span>
-                  <span className="text-2xl" style={{ color: 'rgb(128, 207, 163)' }}>✦</span>
-                  <span className="text-xl font-semibold text-black">Ekhoragbon</span>
-                </button>
-              </div>
-              {/* Navigation */}
-              <div className="hidden md:flex items-center space-x-8">
-                <button
-                  onClick={() => scrollToSection('home')}
-                  className="text-base font-medium text-black hover:text-green-500 transition-colors"
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => window.location.href = '/about'}
-                  className="text-base font-medium text-black hover:text-green-500 transition-colors"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-base font-medium text-black hover:text-green-500 transition-colors"
-                >
-                  Contact
-                </button>
-              </div>
-              {/* LinkedIn Button */}
-              <div>
-                <button className="bg-black text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors flex items-center space-x-2">
-                  <Linkedin size={16} />
-                  <span>LinkedIn</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        {/* Contact Page Content */}
-        <div className="pt-24 pb-20 px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <p className="text-gray-500 text-lg mb-4">Contact</p>
-              <h1 className="text-5xl md:text-6xl font-normal text-black mb-8 leading-tight">
-                Let's connect!
-              </h1>
-              <div className="max-w-2xl">
-                <p className="text-xl text-gray-600 mb-2">
-                  Whether you have a project in mind, want to collaborate or just want
-                </p>
-                <p className="text-xl text-gray-600 mb-2">
-                  to chat about Design, <span className="font-semibold text-black">I'd love to hear from you.</span>
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-12">
-              <div>
-                <p className="text-gray-500 text-lg mb-4">Get in touch</p>
-                <div className="flex items-center space-x-3 group cursor-pointer">
-                  <span className="text-xl text-black">rafarconceicao@gmail.com</span>
-                  <ArrowUpRight size={20} className="text-gray-400 group-hover:text-black transition-colors" />
-                </div>
-              </div>
-
-              <div>
-                <p className="text-gray-500 text-lg mb-4">Phone</p>
-                <p className="text-xl text-black">+1 (647) 638 7050</p>
-              </div>
-            </div>
-
-            <div className="mt-20 pt-8 border-t border-gray-200">
-              <p className="text-gray-400 text-sm">2025 // Designed by Rafael Rodrigues</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-white">
-      <Header goHome={goHome} />
+      <Header />
       {/* Hero Section */}
       <section id="home" className="w-full min-h-screen flex items-center bg-white font-sans">
         <div className="w-[1428px] h-[326px] flex flex-col items-start ml-32">
@@ -255,53 +150,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-
-
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-5xl md:text-6xl font-light mb-8">
-                Let's connect!
-              </h2>
-              <button 
-                onClick={() => setCurrentPage('contact')}
-                className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center space-x-2"
-              >
-                <span>Contact Now</span>
-                <ArrowUpRight size={20} />
-              </button>
-            </div>
-            <div className="hidden md:flex flex-col items-end space-y-6">
-              <div className="flex space-x-8">
-                <button
-                  onClick={() => scrollToSection('home')}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => scrollToSection('about')}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </button>
-              </div>
-              <div className="text-gray-500 text-sm text-right">
-                <p>2025 // Built by Ayoola Aina</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }
@@ -311,6 +160,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<><Header /><About /></>} />
+      <Route path="/contact" element={<><Header /><Contact /></>} />
     </Routes>
   );
 }
