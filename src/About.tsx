@@ -160,6 +160,45 @@ const About: React.FC = () => (
         </div>
       </div>
     </section>
+
+    {/* Off the Clock Section */}
+    <section className="w-full bg-white py-24">
+      <div className="max-w-[1480px] mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-16 mb-12 items-start">
+          <div className="md:col-span-4">
+            <h2 className="text-4xl font-semibold text-black">Off the clock</h2>
+            <div className="w-12 h-1 bg-black mt-2"></div>
+          </div>
+          <div className="md:col-span-8 mt-8 md:mt-0">
+            <p className="text-xl text-gray-600 mb-6">
+              I'm all about sports, exploring new design trends and staying active. I also enjoy gaming and immersing myself in new challenges.
+            </p>
+            <p className="text-xl text-gray-600">
+              Recently, I've started trying out snowboarding and it has been both enjoyable and a thrilling learning experience!
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <img
+            src="https://images.pexels.com/photos/3624367/pexels-photo-3624367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Person holding a snowboard on a snowy hill"
+            className="rounded-2xl object-cover w-full h-96 shadow-lg"
+          />
+          <img
+            src="https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Aerial view of New York City skyline"
+            className="rounded-2xl object-cover w-full h-96 shadow-lg"
+          />
+          <img
+            src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="View of a baseball stadium from behind home plate"
+            className="rounded-2xl object-cover w-full h-96 shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
     <Footer />
   </>
 );
