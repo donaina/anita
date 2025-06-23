@@ -1,20 +1,9 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-interface FooterProps {
-  scrollToSection?: (sectionId: string) => void;
-  setCurrentPage?: (page: string) => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ scrollToSection, setCurrentPage }) => {
-  const handleContactClick = () => {
-    if (setCurrentPage) {
-      setCurrentPage('contact');
-    } else {
-      // If we're on the about page, navigate to home and then contact
-      window.location.href = '/#contact';
-    }
-  };
+const Footer: React.FC = () => {
+  const navigate = useNavigate();
 
   return (
     <section className="py-20 bg-black text-white">
@@ -24,8 +13,8 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection, setCurrentPage }) => {
             <h2 className="text-5xl md:text-6xl font-light mb-8">
               Let's connect!
             </h2>
-            <button 
-              onClick={handleContactClick}
+            <button
+              onClick={() => navigate('/contact')}
               className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center space-x-2"
             >
               <span>Contact Now</span>
@@ -35,26 +24,26 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection, setCurrentPage }) => {
           <div className="hidden md:flex flex-col items-end space-y-6">
             <div className="flex space-x-8">
               <button
-                onClick={() => window.location.href = '/'}
+                onClick={() => navigate('/')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Home
               </button>
               <button
-                onClick={() => window.location.href = '/about'}
+                onClick={() => navigate('/about')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 About
               </button>
               <button
-                onClick={handleContactClick}
+                onClick={() => navigate('/contact')}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 Contact
               </button>
             </div>
             <div className="text-gray-500 text-sm text-right">
-              <p>2025 // Built by Ayoola Aina</p>
+              <p>2025 // Designed by Rafael Rodrigues</p>
             </div>
           </div>
         </div>
