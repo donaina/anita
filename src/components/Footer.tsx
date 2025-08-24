@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               </button>
             </div>
             <div className="text-gray-500 text-xs md:text-sm text-left md:text-right">
-              <p>2025 // Designed by Rafael Rodrigues</p>
+              <p>2025 // Built by Ayoola Aina</p>
             </div>
           </div>
         </div>

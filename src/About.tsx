@@ -170,11 +170,11 @@ const About: React.FC = () => (
           </div>
           <div className="md:col-span-8 mt-6 md:mt-8 md:mt-0">
             <p className="text-lg md:text-xl text-gray-600 mb-4 md:mb-6">
-              I'm all about sports, exploring new design trends and staying active. I also enjoy gaming and immersing myself in new challenges.
+              I'm all about exploring new design trends and staying active. I also enjoy learning new things and reading books.
             </p>
-            <p className="text-lg md:text-xl text-gray-600">
+            {/* <p className="text-lg md:text-xl text-gray-600">
               Recently, I've started trying out snowboarding and it has been both enjoyable and a thrilling learning experience!
-            </p>
+            </p> */}
           </div>
         </div>
 
