@@ -4,10 +4,10 @@ import Footer from './components/Footer';
 const About: React.FC = () => (
   <>
     <section className="w-full mt-[96px] pt-0 pb-32 bg-white overflow-x-hidden flex flex-col">
-      <div className="w-full flex flex-col md:flex-row items-center gap-y-12 md:gap-x-0 px-4 md:px-0 flex-1">
+      <div className="w-full flex flex-col md:flex-row items-center gap-y-12 md:gap-x-8 px-4 md:px-0 flex-1">
         {/* Left column: Heading+SVG and paragraphs */}
         <div
-          className="text-left w-full md:w-[65%] flex-shrink-0 mb-4 md:mb-0 md:pl-32 px-4 md:px-0"
+          className="text-left w-full md:w-[60%] flex-shrink-0 mb-4 md:mb-0 md:pl-32 px-4 md:px-0"
           style={{ maxWidth: 1584 }}
         >
           {/* Heading and SVG in a row */}
@@ -39,11 +39,11 @@ const About: React.FC = () => (
           </p>
         </div>
         {/* Right column: Profile image */}
-        <div className="flex flex-col items-center justify-center w-full md:w-auto md:-ml-24 mb-0 pb-0 px-4 md:px-0">
+        <div className="flex flex-col items-center justify-center w-full md:w-[40%] mb-0 pb-0 px-4 md:px-0">
           <img
             src="/anita.png"
             alt="Anita Ekhoragbon"
-            className="object-cover rounded-2xl bg-gray-100 shadow-lg w-full max-w-[280px] sm:max-w-[320px] md:max-w-none md:w-[592px] md:h-[495px] h-[200px] sm:h-[220px]"
+            className="object-cover rounded-2xl bg-gray-100 shadow-lg w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] md:h-[400px] h-[200px] sm:h-[220px]"
           />
         </div>
       </div>
@@ -202,17 +202,17 @@ const About: React.FC = () => (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           <img
-            src="https://images.pexels.com/photos/3624367/pexels-photo-3624367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/about1.jpg"
             alt="Person holding a snowboard on a snowy hill"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
           <img
-            src="https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/about2.jpg"
             alt="Aerial view of New York City skyline"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
           <img
-            src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/about3.jpeg"
             alt="View of a baseball stadium from behind home plate"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
