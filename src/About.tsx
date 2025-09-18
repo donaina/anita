@@ -81,15 +81,37 @@ const About: React.FC = () => (
               <div className="w-12 h-1 bg-black mt-2 mb-4" />
             </div>
             <div className="flex flex-col gap-y-12 md:gap-y-16">
-              {/* Experience Item 1 - NEW */}
+              {/* Experience Item 1 - Web4Site.net */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-0">
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">UX Designer</h3>
+                  <div className="text-base md:text-lg text-gray-400 mb-2">Web4Site.net - USA (Remote)</div>
+                  <div className="text-base md:text-lg text-black">Designed wireframes, mockups, and interactive prototypes using user-centered design principles, translated research insights into user flows and high-fidelity designs, and built scalable Figma component libraries to increase design team efficiency and ensure brand consistency.</div>
+                </div>
+                <div className="sm:ml-8 flex-shrink-0">
+                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Jun 2025 - Aug 2025</span>
+                </div>
+              </div>
+              {/* Experience Item 2 - Vosyn */}
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-t border-gray-200 pt-8 md:pt-12 gap-4 sm:gap-0">
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">Product Designer</h3>
+                  <div className="text-base md:text-lg text-gray-400 mb-2">Vosyn - Toronto, ON</div>
+                  <div className="text-base md:text-lg text-black">Designed a multilingual streaming platform with scalable UI systems for transcription overlays, AI-powered Smart Context, and interactive translation tools, while optimizing cross-platform user experiences and collaborating with AI and engineering teams for seamless global accessibility.</div>
+                </div>
+                <div className="sm:ml-8 flex-shrink-0">
+                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">May 2025 - Aug 2025</span>
+                </div>
+              </div>
+              {/* Experience Item 3 - EnsuredNG */}
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-t border-gray-200 pt-8 md:pt-12 gap-4 sm:gap-0">
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">UX Designer</h3>
                   <div className="text-base md:text-lg text-gray-400 mb-2">EnsuredNG - Lagos,Nigeria (Remote)</div>
                   <div className="text-base md:text-lg text-black"> </div>
                 </div>
                 <div className="sm:ml-8 flex-shrink-0">
-                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Nov 2024 - Present</span>
+                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Nov 2024 - Dec 2024</span>
                 </div>
               </div>
               {/* Experience Item 2 */}
@@ -180,17 +202,17 @@ const About: React.FC = () => (
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           <img
-            src="https://images.pexels.com/photos/3624367/pexels-photo-3624367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Person holding a snowboard on a snowy hill"
+            src="/about1.jpg"
+            alt="Anita with her friends"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
           <img
-            src="https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Aerial view of New York City skyline"
+            src="/about2.jpg"
+            alt="Anita with her Hackathon team"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
           <img
-            src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/about3.jpeg"
             alt="View of a baseball stadium from behind home plate"
             className="rounded-2xl object-cover w-full h-64 sm:h-80 md:h-96 shadow-lg"
           />
