@@ -32,7 +32,7 @@ function HomePage() {
             <div className="flex flex-col md:flex-row items-start md:items-center w-full gap-6 md:gap-8">
               <div className="w-full md:w-[700px] flex items-center">
                 <h3 className="text-base md:text-lg lg:text-xl text-gray-400 font-normal leading-relaxed w-full" style={{ fontFamily: 'Inter, sans-serif' }}>
-                  With 3 years of experience and a background in Product Design,<br className="hidden md:block" />
+                  With 3 years of experience and a background in Product Design, <br className="hidden md:block" />
                   I love understanding people's needs to solve their problems<br className="hidden md:block" />
                   with digital solutions.
                 </h3>
