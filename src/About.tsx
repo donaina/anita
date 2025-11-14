@@ -166,11 +166,11 @@ const About: React.FC = () => (
               {/* Education Item 1 */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-0">
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">Postgraduate Degree in UX Design</h3>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">Postgraduate Certificate in UX Design</h3>
                   <div className="text-base md:text-lg text-gray-400 mb-2">Humber Polytechnic - Toronto, ON</div>
                 </div>
                 <div className="sm:ml-8 flex-shrink-0">
-                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Sep 2024 - Present</span>
+                  <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Sep 2024 - Aug 2025</span>
                 </div>
               </div>
               {/* Education Item 2 */}
