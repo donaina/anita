@@ -24,7 +24,7 @@ function HomePage() {
             {/* Main Headline */}
             <div className="w-full md:w-[1000px] flex items-center">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-black leading-tight w-full" style={{ fontFamily: 'Inter, sans-serif' }}>
-                A Product and UI/UX Designer studying<br className="hidden md:block" />
+                A Product and UI/UX Designer studying <br className="hidden md:block" />
                 and living in Toronto.
               </h2>
             </div>

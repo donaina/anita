@@ -30,11 +30,12 @@ const About: React.FC = () => (
             </div>
           </div>
           <p className="text-base md:text-xl lg:text-2xl text-gray-500 mb-6">
-            I am a Nigerian with 3 years of experience in Product Design and UI/UX Design. <br className="hidden md:block"/>
-            I am currently studying UX Design at Humber College.
+            I specialize in creating user-centered designs that are both visually appealing and highly functional. <br className="hidden md:block"/>
+            {/* I specialize in creating user-centered designs that are both visually appealing and highly functional. */}
           </p>
           <p className="text-base md:text-xl lg:text-2xl text-gray-500">
-            Having recently transitioned into this field, my focus is on deepening my <br className="hidden md:block"/>
+            {/* Having recently transitioned into this field,  */}
+            My focus is on deepening my <br className="hidden md:block"/>
             skills in UI Design, Prototyping and crafting intuitive digital experiences.
           </p>
         </div>
@@ -55,18 +56,24 @@ const About: React.FC = () => (
           {/* DESIGN */}
           <div className="flex flex-col items-center text-center flex-1">
             <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">Design</span>
-            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Figma & Photoshop</span>
+            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Figma & Framer</span>
           </div>
-          {/* NO CODE */}
+          {/* Brainstorming */}
           <div className="flex flex-col items-center text-center flex-1">
-            <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">No Code</span>
-            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Framer & Webflow</span>
+            <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">Brainstorming</span>
+            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Miro & FigJam</span>
           </div>
-          {/* PROTOTYPE */}
+          {/* Colaboration */}
           <div className="flex flex-col items-center text-center flex-1">
-            <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">Prototype</span>
-            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Play 2 & Figma</span>
+            <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">Colaboration</span>
+            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">Notion & Microsoft Teams</span>
           </div>
+          {/* AI */}
+          <div className="flex flex-col items-center text-center flex-1">
+            <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">AI Tools</span>
+            <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">ChatGPT & Copilot</span>
+          </div>
+          
         </div>
       </div>
     </section>
