@@ -73,9 +73,9 @@ const About: React.FC = () => (
             <span className="uppercase tracking-widest text-gray-400 text-base md:text-lg mb-2">AI Tools</span>
             <span className="text-3xl md:text-4xl font-medium text-black whitespace-nowrap">ChatGPT & Copilot</span>
           </div>
-          
         </div>
       </div>
+      <br /><br /><br /><br />
     </section>
     {/* Experience & Education Section */}
     <section className="w-full bg-white py-0 mt-8">
@@ -111,7 +111,7 @@ const About: React.FC = () => (
                 </div>
               </div>
               {/* Experience Item 3 - EnsuredNG */}
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-t border-gray-200 pt-8 md:pt-12 gap-4 sm:gap-0">
+              {/* <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-t border-gray-200 pt-8 md:pt-12 gap-4 sm:gap-0">
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">UX Designer</h3>
                   <div className="text-base md:text-lg text-gray-400 mb-2">EnsuredNG - Lagos,Nigeria (Remote)</div>
@@ -120,8 +120,8 @@ const About: React.FC = () => (
                 <div className="sm:ml-8 flex-shrink-0">
                   <span className="inline-block px-4 md:px-6 py-2 rounded-full border border-gray-300 bg-white text-gray-500 text-sm md:text-base font-medium shadow-sm">Nov 2024 - Present</span>
                 </div>
-              </div>
-              {/* Experience Item 2 */}
+              </div> */}
+              {/* Experience Item 2
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-t border-gray-200 pt-8 md:pt-12 gap-4 sm:gap-0">
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-medium text-black mb-1">Product Designer</h3>
